@@ -1,0 +1,47 @@
+.user-details-container {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-details-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.user-details-container p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.user-details-container p span {
+  font-weight: bold;
+  color: #333;
+}
+
+.user-details-container .details-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-details-container .details-row p {
+  flex: 0 0 calc(50% - 10px);
+  margin: 5px;
+}
+
+.user-details-container .user-image-container img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .user-details-container .details-row p {
+    flex: 0 0 100%;
+  }
+}

@@ -1,0 +1,222 @@
+/* FrontPage.css */
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .punch-line {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .main {
+    max-width: 330px;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+    border-radius: 7px;
+    box-shadow: -5px -5px 25px rgba(0, 0, 0, 0.705);
+    margin: 50px auto;
+    animation-name: rotate;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+  }
+  
+  .top-card {
+    width: 100%;
+  }
+  
+  .top-card img {
+    width: 100%;
+  }
+  
+  .top-card .menu-icon {
+    position: relative;
+    width: 22px;
+    bottom: 13.7em;
+    left: 1.1em;
+    cursor: pointer;
+  }
+  
+  .top-card .menu-icon .menu {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    margin-bottom: 6px;
+    opacity: .5;
+    transition: .4s;
+  }
+  
+  .top-card .menu-icon .item1 {
+    left: -5px;
+  }
+  
+  .top-card .menu-icon .item2 {
+    left: 5px;
+  }
+  
+  .top-card .menu-icon:hover .menu {
+    left: 0;
+    border-radius: 1px;
+  }
+  
+  .top-card .name {
+    width: 50%;
+    height: 0;
+    text-align: center;
+    float: right;
+    margin-right: 5%;
+  }
+  
+  .top-card .name p {
+    position: relative;
+    font-size: 50px;
+    font-weight: 800;
+    color: #ffffff;
+    opacity: .8;
+    bottom: 140px;
+    line-height: 50px;
+    text-align: center;
+  }
+  
+  .top-card .name span {
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  h1 {
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+    margin: 12px 0;
+    border-bottom: 4px solid rgba(1, 106, 175, 0.603);
+    width: 10%;
+  }
+  
+  .middle-card, .homeFooter {
+    margin: 5px 25px;
+  }
+  
+  .middle-card {
+    text-align: justify;
+  }
+  
+  .homeFooter {
+    text-align: center;
+  }
+  
+  .homeFooter .social-icon {
+    font-size: 20px;
+    margin: 0 5%;
+    color: rgba(0, 0, 0, .9);
+  }
+  
+  .facebook:hover {color:#3b5999;}
+  .twitter:hover {color: #55acee;}
+  .google:hover {color: #dd4b39;}
+  .github:hover {color: #302f2f;}
+  .linkedin:hover {color: #0077B5;}
+  
+  .homeFooter .links {
+    border-top: 2px solid rgba(0, 0, 0, .1);
+    text-align: center;
+    margin-top: 10px;
+    padding: 8px 0;
+  }
+  
+  .homeFooter .links  address {
+    font-size: 15px;
+  }
+  
+  .homeFooter .links a { 
+    text-decoration: none;
+    font-weight: 600;
+    color: rgba(0, 0, 0, .9);
+  }
+  
+  
+  /* ANIMATION */
+  @keyframes rotate {
+    0% {
+      transform-origin: left bottom;
+      transform: rotate3d(0, 0, 1, 45deg);
+      opacity: 0;
+    }
+    100% {
+      transform-origin: left bottom;
+      transform: none;
+      opacity: 1;
+    }
+  }
+  
+  
+  /* ConnectButton.css */
+  
+  .blinks {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: #000000;
+    background-color: #add8e6;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .blinks:hover {
+    background-color: #add8e6;
+  }
+  
+  
+  .bgImg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .bgImg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .fornt-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+  }
+  
+  .fornt {
+    width: 150px; /* Set the width of the logo container */
+    height: 150px; /* Set the height of the logo container */
+    border-radius: 10%; /* Make the container round */
+    overflow: hidden; /* Hide any content that overflows the container */
+  }
+  
+  .fornt img {
+    width: 100%; /* Make the image fill its container */
+    height: 100%; /* Make the image fill its container */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+  }
+  

@@ -1,0 +1,33 @@
+/* MatrimonialSearchForm.css */
+.search-form {
+    max-width: 420px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .search-form form {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .search-form input[type="text"],
+  .search-form select,
+  .search-form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .search-form button {
+    background-color: #add8e6;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-form button:hover {
+    background-color: #8ab8cd;
+  }
+  

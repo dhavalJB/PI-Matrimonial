@@ -1,0 +1,36 @@
+/* client/src/components/css/Detail.css */
+
+.detail-container {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .detail-container h1 {
+    margin-bottom: 20px;
+  }
+  
+  .detail-container .details-btn,
+  .detail-container .form-btn {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    background: #7ce3ff;
+    color: #222;
+    font-weight: bold;
+    font-family: Montserrat;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .detail-container .details-btn:hover,
+  .detail-container .form-btn:hover {
+    background: #00c8ff;
+  }
+  
+  .detail-container p {
+    color: rgb(0, 195, 255);
+    margin-top: 10px;
+  }
+  
